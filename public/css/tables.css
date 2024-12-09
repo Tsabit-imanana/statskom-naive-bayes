@@ -1,0 +1,110 @@
+/* General Styles for the Dataset Page */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #F6C0A6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Header */
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #f58449;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+/* Subheader Styles */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #3E2922;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Paragraph under subheader */
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Content Area */
+.table-container {
+    width: 80%; /* Set container to 80% of the full page width */
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Avoid overflow beyond container */
+}
+
+/* Scrollable Table */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 500px; /* Limit vertical height for scrolling */
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Ensure table uses the full container width */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+/* Table Header */
+th {
+    background-color: #f58449;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Table Body */
+td {
+    color: #333;
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Add space at the bottom of the last table */
+.table-container:last-child {
+    margin-bottom: 60px;
+}
+
+/* Pagination Styles (if required) */
+.table-container .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.table-container .pagination a {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #f58449;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.table-container .pagination a:hover {
+    background-color: #e3743c;
+}

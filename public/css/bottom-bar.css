@@ -1,0 +1,59 @@
+.bottom-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar li {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menyusun logo di atas teks */
+    justify-content: center;
+}
+
+.bottom-bar a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;  /* Menyusun ikon dan teks secara vertikal */
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.bottom-bar-icon {
+    width: 24px;  /* Ukuran ikon SVG */
+    height: 24px;
+    margin-bottom: 5px;  /* Jarak antara ikon dan teks */
+}
+
+.bottom-bar a:hover {
+    color: #f39c12;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFE6CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    transition: transform 0.3s ease;
+    z-index: 9999;  /* Pastikan berada di atas elemen lain */
+}
+
+/* Animasi untuk bottom bar */
+.bottom-bar.active {
+    transform: translateY(0);
+}
+
+.bottom-bar.inactive {
+    transform: translateY(100%);
+}

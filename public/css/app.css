@@ -1,0 +1,72 @@
+/* resources/css/app.css */
+
+/* Styling untuk navbar */
+
+html, body {
+    height: 10%; /* Pastikan html dan body mengisi seluruh tinggi layar */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    width: 100%; /* Pastikan body mengisi seluruh lebar layar */
+
+}
+
+nav {
+    position: sticky;  /* Menjadikan navbar tetap berada di atas saat di-scroll */
+    top: 0;            /* Posisi top bar berada di paling atas */
+    background-color: #2c3e50;
+    padding: 10px;
+    z-index: 1000;     /* Memastikan navbar berada di atas elemen lain */
+    transition: transform 0.3s ease; /* Animasi ketika navbar bergerak */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sedikit bayangan */
+}
+
+/* Styling untuk menu navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Menambahkan padding pada konten utama */
+/* Mengatur lebar konten menjadi 80% dan menambah margin otomatis agar berada di tengah */
+.content {
+    width: 100%;  /* Gunakan 100% agar elemen mengisi seluruh lebar */
+    margin: 0 auto; /* Menjaga elemen tetap terpusat */
+    padding: 0;  /* Pastikan tidak ada padding yang mengganggu */
+}
+
+
+/* Anda juga bisa menambahkan padding lebih besar jika perlu pada konten tertentu */
+.content .table-container {
+    padding-left: 20px;  /* Padding kiri khusus untuk kontainer tabel */
+    padding-right: 20px; /* Padding kanan khusus untuk kontainer tabel */
+}
+* {
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar dan tinggi */
+}
+
