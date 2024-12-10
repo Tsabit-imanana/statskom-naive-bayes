@@ -37,23 +37,25 @@
 
 .bottom-bar {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 10px; /* Jarak dari bawah layar */
+    left: 50%; /* Posisikan elemen di tengah secara horizontal */
+    transform: translateX(-50%); /* Geser elemen ke kiri setengah dari lebarnya */
+    width: auto; /* Sesuaikan lebar dengan kontennya */
     background-color: #FFE6CD;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px; /* Berikan padding untuk kenyamanan */
+    border-radius: 50px; /* Tambahkan sudut melengkung */
     transition: transform 0.3s ease;
-    z-index: 9999;  /* Pastikan berada di atas elemen lain */
+    z-index: 9999; /* Pastikan berada di atas elemen lain */
 }
 
 /* Animasi untuk bottom bar */
 .bottom-bar.active {
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .bottom-bar.inactive {
-    transform: translateY(100%);
+    transform: translateX(-50%) translateY(100%);
 }
