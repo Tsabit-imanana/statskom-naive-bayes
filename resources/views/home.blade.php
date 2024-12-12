@@ -20,41 +20,51 @@
         </div>
     </div>
 
-    <!-- Bagian Anggota (Our Team) -->
-    <div class="home-anggota">
-        <div class="overlap-group-wrapper">
-            <div class="overlap-group">
-                <!-- Team Members with Photos and Names -->
-                <div class="team-member">
-                    <div class="circle-wrapper">
-                        <img class="anggota" src="{{ asset('images/rilla.png') }}" alt="Nadiyah Myrilla" />
-                    </div>
-                    <!-- Member's Name and ID Below the Circle -->
-                    <div class="member-name">Nadiyah Myrilla</div>
-                    <div class="member-id">23081010206</div>
+
+    <div class="anggota-container">
+        <!-- Card 1 -->
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="bg">
+                    <img src="{{ asset('images/tsabit_imanana.jpg') }}" alt="Foto Anggota" class="card-image">
                 </div>
-    
-                <div class="team-member">
-                    <div class="circle-wrapper">
-                        <img class="img" src="{{ asset('images/nuha.png') }}" alt="Salsabila Nuha" />
-                    </div>
-                    <!-- Member's Name and ID Below the Circle -->
-                    <div class="member-name">Salsabila Nuha</div>
-                    <div class="member-id">23081010201</div>
-                </div>
-    
-                <div class="team-member">
-                    <div class="circle-wrapper">
-                        <img class="anggota-2" src="{{ asset('images/tsabit.png') }}" alt="Tsabit Imanana" />
-                    </div>
-                    <!-- Member's Name and ID Below the Circle -->
-                    <div class="member-name">Tsabit Imanana</div>
-                    <div class="member-id">23081010169</div>
-                </div>
+                <div class="blob-tsabit"></div>
             </div>
+            <p class="card-name">Tsabit Imanana</p>
+            <p class="card-npm">
+                23081010139
+            </p>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="bg">
+                    <img src="{{ asset('images/rilla.jpg') }}" alt="Foto Anggota" class="card-image">
+                </div>
+                <div class="blob-rilla"></div>
+            </div>
+            <p class="card-name">Rilla</p>
+            <p class="card-npm">
+                23081010206
+            </p>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="bg">
+                    <img src="{{ asset('images/bila.jpg') }}" alt="Foto Anggota" class="card-image">
+                </div>
+                <div class="blob-bila"></div>
+            </div>
+            <p class="card-name">Bila</p>
+            <p class="card-npm">
+                23081010201
+            </p>
         </div>
     </div>
-
+    
     <!-- Bagian Penjelasan (What We Do Here) - Ditambahkan di bawah -->
     <div class="home-penjelasan">
         <div class="overlap-group-wrapper">

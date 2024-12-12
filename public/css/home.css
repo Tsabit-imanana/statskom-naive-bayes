@@ -1,365 +1,471 @@
-/* ========================
-   Home Page Styles (Existing)
-   ======================== */
+    /* ========================
+    Home Page Styles (Existing)
+    ======================== */
 
-/* Home Section (Existing Styles) */
-.home {
-    background-color: #3e2922;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
+    /* Home Section (Existing Styles) */
+    .home {
+        background-color: #3e2922;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 
-.home .overlap-wrapper {
-    background-color: #3e2922;
-    overflow: hidden;
-    width: 1920px;
-    height: 1080px;
-}
+    .home .overlap-wrapper {
+        background-color: #3e2922;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+    }
 
-.home .overlap {
-    position: relative;
-    top: -200px;
-    left: -279px;
-    width: 2444px;
-    height: 1515px;
-}
+    .home .overlap {
+        position: relative;
+        top: -200px;
+        left: -279px;
+        width: 2444px;
+        height: 1515px;
+    }
 
-.home .overlap-group {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2444px;
-    height: 1515px;
-}
+    .home .overlap-group {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2444px;
+        height: 1515px;
+    }
 
-.home .ellipse {
-    width: 667px;
-    height: 606px;
-    top: 0;
-    left: 0;
-    border-radius: 333.5px / 303px;
-    position: absolute;
-    background-color: #ffe6cdc4;
-}
+    .home .ellipse {
+        width: 667px;
+        height: 606px;
+        top: 0;
+        left: 0;
+        border-radius: 333.5px / 303px;
+        position: absolute;
+        background-color: #ffe6cdc4;
+    }
 
-.home .div {
-    width: 667px;
-    height: 606px;
-    top: 909px;
-    left: 1777px;
-    border-radius: 333.5px / 303px;
-    position: absolute;
-    background-color: #ffe6cdc4;
-}
+    .home .div {
+        width: 667px;
+        height: 606px;
+        top: 909px;
+        left: 1777px;
+        border-radius: 333.5px / 303px;
+        position: absolute;
+        background-color: #ffe6cdc4;
+    }
 
-.home .ellipse-2 {
-    width: 361px;
-    height: 331px;
-    top: 747px;
-    left: 1777px;
-    border-radius: 180.5px / 165.5px;
-    position: absolute;
-    background-color: #ffe6cdc4;
-}
+    .home .ellipse-2 {
+        width: 361px;
+        height: 331px;
+        top: 747px;
+        left: 1777px;
+        border-radius: 180.5px / 165.5px;
+        position: absolute;
+        background-color: #ffe6cdc4;
+    }
 
-.home .ellipse-3 {
-    width: 361px;
-    height: 331px;
-    top: 234px;
-    left: 486px;
-    border-radius: 180.5px / 165.5px;
-    position: absolute;
-    background-color: #ffe6cdc4;
-}
+    .home .ellipse-3 {
+        width: 361px;
+        height: 331px;
+        top: 234px;
+        left: 486px;
+        border-radius: 180.5px / 165.5px;
+        position: absolute;
+        background-color: #ffe6cdc4;
+    }
 
-.home .ellipse-4 {
-    width: 242px;
-    height: 204px;
-    top: 463px;
-    left: 404px;
-    border-radius: 121px / 102px;
-    position: absolute;
-    background-color: #ffe6cdc4;
-}
+    .home .ellipse-4 {
+        width: 242px;
+        height: 204px;
+        top: 463px;
+        left: 404px;
+        border-radius: 121px / 102px;
+        position: absolute;
+        background-color: #ffe6cdc4;
+    }
 
-.home .text-wrapper {
-    position: absolute;
-    width: 1186px;
-    height: 530px;
-    top: 474px;
-    left: 646px;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe6cd;
-    font-size: 250px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
+    .home .text-wrapper {
+        position: absolute;
+        width: 1186px;
+        height: 530px;
+        top: 474px;
+        left: 646px;
+        font-family: "Inter-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffe6cd;
+        font-size: 250px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
 
-.home .text-wrapper-2 {
-    position: absolute;
-    height: 58px;
-    top: 1048px;
-    left: 1082px;
-    text-shadow: 0px 4px 4px #00000040;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffe6cd;
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
+    .home .text-wrapper-2 {
+        position: absolute;
+        height: 58px;
+        top: 1048px;
+        left: 1082px;
+        text-shadow: 0px 4px 4px #00000040;
+        font-family: "Inter-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffe6cd;
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: normal;
+    }
 
-/* =======================
-   Our Team Section (Updated)
-   ======================= */
 
-   .home-anggota {
-    background-color: #ffe6cd; /* Warna latar belakang untuk Our Team */
-    display: flex;
-    justify-content: center; /* Susunan horizontal */
-    align-items: center;
-    padding: 50px 0;
-    width: 100%;
-}
 
-.home-anggota .overlap-group-wrapper {
-    width: 100%;
-    max-width: 1920px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
+    /* =======================
+    Our Team Section (Updated)
+    ======================= */
+    /* =======================
+    Our Team Section (Updated)
+    ======================= */
 
-.home-anggota .overlap-group {
-    position: relative;
-    width: 100%;
-    max-width: 1731px; /* Membatasi lebar maksimal */
-    height: auto;
-}
+    .home-anggota {
+        background-color: #ffe6cd; /* Warna latar belakang untuk Our Team */
+        display: flex;
+        justify-content: center; /* Susunan horizontal */
+        align-items: center;
+        padding: 50px 0;
+        width: 100%;
+    }
 
-.home-anggota .text-wrapper {
-    position: absolute;
-    top: 50px;
-    text-align: center;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #777575;
-    font-size: 50px;
-    letter-spacing: 0;
-    line-height: normal;
-    width: 100%;
-}
+    .home-anggota .overlap-group-wrapper {
+        width: 100%;
+        max-width: 1920px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
 
-/* =======================
-   Our Team Section (Updated)
-   ======================= */
-/* =======================
-   Our Team Section (Updated)
-   ======================= */
+    .home-anggota .overlap-group {
+        position: relative;
+        width: 100%;
+        max-width: 1731px; /* Membatasi lebar maksimal */
+        height: auto;
+    }
 
-   .home-anggota {
-    background-color: #ffe6cd; /* Warna latar belakang untuk Our Team */
-    display: flex;
-    justify-content: center; /* Susunan horizontal */
-    align-items: center;
-    padding: 50px 0;
-    width: 100%;
-}
+    .home-anggota .text-wrapper {
+        position: absolute;
+        top: 50px;
+        text-align: center;
+        font-family: "Inter-Bold", Helvetica;
+        font-weight: 700;
+        color: #777575;
+        font-size: 50px;
+        letter-spacing: 0;
+        line-height: normal;
+        width: 100%;
+    }
 
-.home-anggota .overlap-group-wrapper {
-    width: 100%;
-    max-width: 1920px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.home-anggota .overlap-group {
-    position: relative;
-    width: 100%;
-    max-width: 1731px; /* Membatasi lebar maksimal */
-    height: auto;
-}
-
-.home-anggota .text-wrapper {
-    position: absolute;
-    top: 50px;
-    text-align: center;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #777575;
-    font-size: 50px;
-    letter-spacing: 0;
-    line-height: normal;
-    width: 100%;
-}
-
-/* Circle Wrapper to position the photo and text inside */
-.home-anggota .circle-wrapper {
-    position: relative;
-    width: 450px;  /* Ukuran lingkaran yang tetap */
-    height: 550px; /* Lingkaran tetap */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;  /* Membuat lingkaran */
-    background-color: #a38b66c4; /* Background color for circles */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); /* Add shadow for visual depth */
-    margin: 20px;  /* Space between circles */
-    overflow: hidden; /* Memastikan gambar tidak keluar dari lingkaran */
-}
-
-.home-anggota .circle-wrapper img {
-    width: 100%; /* Membuat gambar memenuhi lingkaran */
-    height: 100%; /* Membuat gambar memenuhi lingkaran */
-    object-fit: cover; /* Memastikan gambar terpotong dan menyesuaikan */
-}
-
-/* Member's name and ID styling */
-.home-anggota .member-name, 
-.home-anggota .member-id {
-    text-align: center; /* Center align the text */
-    font-family: "Holtwood One SC-Regular", Helvetica;
-    font-weight: 400;
-    color: #777575;
-}
-
-.home-anggota .member-name {
-    font-size: 24px;
-    margin-top: 10px;  /* Jarak antara lingkaran dan nama */
-}
-
-.home-anggota .member-id {
-    font-size: 20px;
-    margin-top: 5px;  /* Jarak antara nama dan ID */
-    text-shadow: 0px 13px 5.9px #00000040;
-}
-
-/* Ensuring Horizontal Layout */
-.home-anggota .overlap-group {
-    display: flex;
-    justify-content: space-evenly; /* Membuat anggota tim tampil sejajar horizontal */
-    align-items: center;
-    width: 100%;
-}
-
-.home-anggota .circle-wrapper:nth-child(1),
-.home-anggota .circle-wrapper:nth-child(2),
-.home-anggota .circle-wrapper:nth-child(3) {
-    margin: 0 20px;  /* Memberikan jarak antar gambar */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
+    /* Circle Wrapper to position the photo and text inside */
     .home-anggota .circle-wrapper {
-        width: 180px;  /* Ukuran lingkaran lebih kecil pada perangkat mobile */
-        height: 180px;
+        position: relative;
+        width: 400px;
+        height: 650px;
+        border-radius: 14px;
+        z-index: 1111;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
     }
 
     .home-anggota .circle-wrapper img {
-        width: 100%;  /* Ukuran gambar tetap menyesuaikan lingkaran */
+        width: 100%; /* Membuat gambar memenuhi lingkaran */
+        height: 100%; /* Membuat gambar memenuhi lingkaran */
+        object-fit: cover; /* Memastikan gambar terpotong dan menyesuaikan */
+    }
+
+    .bg {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 190px;
+        height: 240px;
+        z-index: 2;
+        background: rgba(255, 255, 255, .95);
+        backdrop-filter: blur(24px);
+        border-radius: 10px;
+        overflow: hidden;
+        outline: 2px solid white;
+        
+    }
+    .bg img {
+        width: 100%;
         height: 100%;
+        object-fit: cover; /* atau gunakan "contain" sesuai kebutuhan */
+        object-position: center;
+    }
+
+    
+    /* Member's name and ID styling */
+    .home-anggota .member-name, 
+    .home-anggota .member-id {
+        text-align: center; /* Center align the text */
+        font-family: "Holtwood One SC-Regular", Helvetica;
+        font-weight: 400;
+        color: #777575;
     }
 
     .home-anggota .member-name {
-        font-size: 18px;
+        font-size: 24px;
+        margin-top: 10px;  /* Jarak antara lingkaran dan nama */
     }
 
     .home-anggota .member-id {
-        font-size: 14px;
+        font-size: 20px;
+        margin-top: 5px;  /* Jarak antara nama dan ID */
+        text-shadow: 0px 13px 5.9px #00000040;
     }
-}
 
-/* =========================
-   Bagian What We Do Here
-   ========================= */
+    /* Ensuring Horizontal Layout */
+    .home-anggota .overlap-group {
+        display: flex;
+        justify-content: space-evenly; /* Membuat anggota tim tampil sejajar horizontal */
+        align-items: center;
+        width: 100%;
+    }
 
-   .home-penjelasan {
-    background-color: #f58449;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
+    .home-anggota .circle-wrapper:nth-child(1),
+    .home-anggota .circle-wrapper:nth-child(2),
+    .home-anggota .circle-wrapper:nth-child(3) {
+        margin: 0 20px;  /* Memberikan jarak antar gambar */
+    }
 
-.home-penjelasan .overlap-group-wrapper {
-    background-color: #f58449;
-    overflow: hidden;
-    width: 1920px;
-    height: 1080px;
-}
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .home-anggota .circle-wrapper {
+            width: 180px;  /* Ukuran lingkaran lebih kecil pada perangkat mobile */
+            height: 180px;
+        }
 
-.home-penjelasan .overlap-group {
-    position: relative;
-    width: 2175px;
-    height: 1435px;
-    top: -78px;
-    left: -128px;
-}
+        .home-anggota .circle-wrapper img {
+            width: 100%;  /* Ukuran gambar tetap menyesuaikan lingkaran */
+            height: 100%;
+        }
 
-.home-penjelasan .ellipse {
-    width: 729px;
-    height: 708px;
-    top: 727px;
-    left: 1446px;
-    border-radius: 364.5px / 354px;
-    position: absolute;
-    background-color: #01757a;
-    border: 1px solid;
-    border-color: #000000;
-}
+        .home-anggota .member-name {
+            font-size: 18px;
+        }
 
-.home-penjelasan .div {
-    width: 333px;
-    height: 320px;
-    top: 0;
-    left: 0;
-    border-radius: 166.5px / 160px;
-    position: absolute;
-    background-color: #01757a;
-    border: 1px solid;
-    border-color: #000000;
-}
+        .home-anggota .member-id {
+            font-size: 14px;
+        }
+    }
 
-.home-penjelasan .image {
-    position: absolute;
-    width: 777px;
-    height: 733px;
-    top: 360px;
-    left: 1204px;
-    object-fit: cover;
-}
+    /* =========================
+    Bagian What We Do Here
+    ========================= */
 
-.home-penjelasan .text-wrapper {
-    position: absolute;
-    width: 995px;
-    height: 556px;
-    top: 285px;
-    left: 248px;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #01757a;
-    font-size: 130px;
-    letter-spacing: 0;
-    line-height: normal;
-}
+    .home-penjelasan {
+        background-color: #f58449;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 
-.home-penjelasan .klasifikasi-untuk {
-    position: absolute;
-    width: 780px;
-    height: 174px;
-    top: 726px;
-    left: 248px;
-    font-family: "Jost-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
-}
+    .home-penjelasan .overlap-group-wrapper {
+        background-color: #f58449;
+        overflow: hidden;
+        width: 1920px;
+        height: 1080px;
+    }
 
+    .home-penjelasan .overlap-group {
+        position: relative;
+        width: 2175px;
+        height: 1435px;
+        top: -78px;
+        left: -128px;
+    }
+
+    .home-penjelasan .ellipse {
+        width: 729px;
+        height: 708px;
+        top: 727px;
+        left: 1446px;
+        border-radius: 364.5px / 354px;
+        position: absolute;
+        background-color: #01757a;
+        border: 1px solid;
+        border-color: #000000;
+    }
+
+    .home-penjelasan .div {
+        width: 333px;
+        height: 320px;
+        top: 0;
+        left: 0;
+        border-radius: 166.5px / 160px;
+        position: absolute;
+        background-color: #01757a;
+        border: 1px solid;
+        border-color: #000000;
+    }
+
+    .home-penjelasan .image {
+        position: absolute;
+        width: 777px;
+        height: 733px;
+        top: 360px;
+        left: 1204px;
+        object-fit: cover;
+    }
+
+    .home-penjelasan .text-wrapper {
+        position: absolute;
+        width: 995px;
+        height: 556px;
+        top: 285px;
+        left: 248px;
+        font-family: "Inter-Bold", Helvetica;
+        font-weight: 700;
+        color: #01757a;
+        font-size: 130px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .home-penjelasan .klasifikasi-untuk {
+        position: absolute;
+        width: 780px;
+        height: 174px;
+        top: 726px;
+        left: 248px;
+        font-family: "Jost-Regular", Helvetica;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 40px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    /* Anggota Container Styling */
+    .anggota-container {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    /* Card Styling */
+    .card {
+        position: relative;
+        width: 450px;
+        height: 660px;
+        border-radius: 14px;
+        z-index: 1111;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+
+    .bg {
+        position: absolute;
+        top: 5px;
+        margin-left: 5px;
+        width: 430px;
+        height: 640px;
+        z-index: 2;
+        background: rgba(255, 255, 255, .95);
+        backdrop-filter: blur(24px);
+        border-radius: 10px;
+        overflow: hidden;
+        outline: 0px solid white;
+    }
+
+    .blob-tsabit {
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 50%;
+        width: 430px;
+        height: 650px;
+        border-radius: 40%;
+        background-color: goldenrod;
+        opacity: 1;
+        filter: blur(5px);
+        animation: blob-bounce 5s infinite ease;
+    }
+    .blob-rilla {
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 50%;
+        width: 430px;
+        height: 650px;
+        border-radius: 40%;
+        background-color: rgb(218, 32, 162);
+        opacity: 1;
+        filter: blur(5px);
+        animation: blob-bounce 5s infinite ease;
+    }
+    .blob-bila {
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 50%;
+        width: 430px;
+        height: 650px;
+        border-radius: 40%;
+        background-color: rgb(8, 199, 8);
+        opacity: 1;
+        filter: blur(5px);
+        animation: blob-bounce 5s infinite ease;
+    }
+
+
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-name {
+        margin-top: 10px;
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+    }
+    .card-npm {
+        margin-top: 10px;
+        font-size: 25px;
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* Blob Animation */
+    @keyframes blob-bounce {
+        0% {
+            transform: translate(-100%, -100%) translate3d(0, 0, 0);
+        }
+
+        25% {
+            transform: translate(-100%, -100%) translate3d(110%, 0, 0);
+        }
+
+        50% {
+            transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+        }
+
+        75% {
+            transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+        }
+
+        100% {
+            transform: translate(-100%, -100%) translate3d(0, 0, 0);
+        }
+    }
