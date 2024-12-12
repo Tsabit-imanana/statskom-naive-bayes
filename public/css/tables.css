@@ -1,7 +1,7 @@
 /* General Styles for the Dataset Page */
 body {
     font-family: "Arial", sans-serif;
-    background-color: #F6C0A6;
+    background-color: #F5844A;
     color: #333;
     margin: 0;
     padding: 0;
@@ -68,7 +68,7 @@ th, td {
 
 /* Table Header */
 th {
-    background-color: #f58449;
+    background-color: #B6ACAD;
     color: #fff;
     font-size: 16px;
 }
@@ -98,7 +98,7 @@ tr:hover {
 .table-container .pagination a {
     padding: 10px 20px;
     margin: 0 5px;
-    background-color: #f58449;
+    background-color: #B6ACAD;
     color: white;
     border-radius: 5px;
     text-decoration: none;

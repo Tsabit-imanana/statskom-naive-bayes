@@ -5,6 +5,7 @@
     <h2>Tabel Probabilitas Naive Bayes</h2>
 
     {{-- Tabel Status Pekerjaan --}}
+    <h3>Probabilitas merupakan peluang data tersebut muncul berapa kali dengan hasil tepat waktu atau tidak tepat waktu.</h3>
     <h3>Status Pekerjaan</h3>
     <table class="table table-bordered">
         <thead>

@@ -7,6 +7,7 @@
 
         {{-- Data Training --}}
         <div class="table-container">
+            <h2>Data traning merupakan data yang akan untuk algoritman naive bayes mempelajari data untuk membuat keputusan. Total data traning adalah 30 data.</h2>
             <h2>Training Data</h2>
             <p><strong>Total Data: {{ $trainingData->count() }}</strong></p> {{-- Menampilkan total data training --}}
             @if($trainingData->isNotEmpty())
@@ -53,7 +54,8 @@
 
         {{-- Data Testing --}}
         <div class="table-container">
-            <h2>Testing Data</h2>
+            <h2>Data testing merupakan data yang akan melakukan uji penggunaan algoritman naive bayes untuk membuat keputusan. Total data testing adalah 29 data.</h2>
+            <h2>Testing Data</h2>   
             <p><strong>Total Data: {{ $testingData->count() }}</strong></p> {{-- Menampilkan total data testing --}}
             @if($testingData->isNotEmpty())
                 <table>
