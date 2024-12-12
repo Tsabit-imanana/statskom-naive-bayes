@@ -39,25 +39,8 @@ class DatasetController extends Controller
 
     public function home()
     {
-        $table = (new Dataset)->getTable(); // Mendapatkan nama tabel 'datasets'
-        
-        // Mendapatkan semua kolom dari tabel datasets
-        $columns = DB::getSchemaBuilder()->getColumnListing($table);
     
-        // Mulai query untuk mencari nilai null pada setiap kolom
-        $query = Dataset::query();
-        
-        foreach ($columns as $column) {
-            $query->orWhereNull($column); // Periksa nilai null pada setiap kolom
-        }
-    
-        // Hitung jumlah baris dengan kolom yang bernilai null
-        $missingData = $query->count();
-    
-        $totalData = Dataset::count();
-        $cleanedData = $totalData - $missingData;
-    
-        return view('home', compact('totalData', 'missingData', 'cleanedData'));
+        return view('home');
     }
     
 

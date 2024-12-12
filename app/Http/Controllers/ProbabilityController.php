@@ -96,8 +96,42 @@ class ProbabilityController extends Controller
         // Tambahkan probabilitas IPK ke dalam variabel probabilities
         $probabilities['IPK'] = $ipkProbabilities;
 
+        $pembayaran = [
+
+        ];
+        $datasets = Dataset::all();
+
+    // Data berdasarkan kelulusan
+    $lulus = $datasets->where('kelulusan', 'Lulus');
+    $tidakLulus = $datasets->where('kelulusan', 'Tidak Lulus');
+
+    // Hitung total data untuk lulus dan tidak lulus
+    $totalLulus = $lulus->count();
+    $totalTidakLulus = $tidakLulus->count();
+
+    // **Tabel Probabilitas Status Pembayaran**
+    $statusPembayaranCategories = [
+        'Tidak ada tunggakan',
+        'Belum melunasi 1 semester',
+        'Belum melunasi 2 semester',
+        'Belum melunasi 3 semester',
+        'Belum melunasi 4 semester',
+    ];
+
+    $statusPembayaranProbabilities = [];
+    foreach ($statusPembayaranCategories as $category) {
+        $statusPembayaranProbabilities[$category] = [
+            'Lulus' => $lulus->where('status_pembayaran', $category)->count(),
+            'Tidak Lulus' => $tidakLulus->where('status_pembayaran', $category)->count(),
+        ];
+    }
+
+    // Tambahkan probabilitas Status Pembayaran ke dalam variabel probabilities
+    $probabilities['Status Pembayaran'] = $statusPembayaranProbabilities;
+
+
         // Return data ke view
-        return view('probabilities', compact('probabilities', 'sksProbabilities', 'totalLulus', 'totalTidakLulus','matkulProbabilities'));
+        return view('probabilities', compact('probabilities', 'sksProbabilities', 'totalLulus', 'totalTidakLulus','matkulProbabilities',));
     }
 
     // Fungsi untuk mengkategorikan IPK
