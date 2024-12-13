@@ -9,73 +9,76 @@
         align-items: center;
         min-height: 100vh;
         margin: 0;
-        background-color: #f9f9f9;
+        background-color: #FCEDDA;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     /* Form Styling */
     .form-wrapper {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        max-width: 400px;
+        background-color: #FCEDDA;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 30px 5px 30px rgba(1, 0, 0, 0.3);
+        max-width: 800px;
         width: 100%;
+        background: #FCEDDA;
+    }
+
+    .container header {
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 600;
         text-align: center;
     }
 
-    header {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: 0.9rem;
-        margin-bottom: 20px;
-    }
-
-    .input-box {
-        margin-bottom: 15px;
-        text-align: left;
+    .form .input-box {
+        width: 100%;
+        margin-top: 10px;
     }
 
     .input-box label {
-        font-weight: bold;
-        display: block;
-        margin-bottom: 5px;
+        color: #000;
     }
 
-    .form-control {
+    .form :where(.input-box input, .select-box) {
+        position: relative;
+        height: 35px;
         width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .btn {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        outline: none;
         font-size: 1rem;
+        color: #808080;
+        margin-top: 5px;
+        border: 1px solid #EE4E34;
+        border-radius: 6px;
+        padding: 0 15px;
+        background: #FCEDDA;
     }
 
-    .btn:hover {
-        background-color: #0056b3;
+    .input-box input:focus {
+        box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
     }
 
-    .mt-4 {
-        margin-top: 20px;
+    .form button {
+        height: 40px;
+        width: 100%;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: #EE4E34;
     }
 
-    h3 strong {
-        color: #007bff;
+    .form button:hover {
+        background: #EE3E34;
     }
 </style>
 
-<section class="container">
+<div class="container">
     <div class="form-wrapper">
         <header>Prediksi Kelulusan</header>
         <p>Masukkan data di bawah untuk memprediksi kelulusan berdasarkan input yang Anda berikan.</p>
@@ -120,5 +123,5 @@
             <h3 class="mt-4">Hasil Prediksi Kelulusan: <strong>{{ $predictedGraduation }}</strong></h3>
         @endif
     </div>
-</section>
+</div>
 @endsection
