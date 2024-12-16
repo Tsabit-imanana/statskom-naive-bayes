@@ -2,7 +2,7 @@
 
 @section('content')
 <style>
-    /* Container Styling */
+    /* Styling untuk form dan container */
     .container {
         display: flex;
         justify-content: center;
@@ -14,7 +14,6 @@
         box-sizing: border-box;
     }
 
-    /* Form Styling */
     .form-wrapper {
         background-color: #FCEDDA;
         padding: 25px;
@@ -26,10 +25,11 @@
     }
 
     .container header {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: #000;
         font-weight: 600;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .form .input-box {
@@ -39,11 +39,12 @@
 
     .input-box label {
         color: #000;
+        font-size: 1rem;
     }
 
     .form :where(.input-box input, .select-box) {
         position: relative;
-        height: 35px;
+        height: 40px;
         width: 100%;
         outline: none;
         font-size: 1rem;
@@ -60,11 +61,11 @@
     }
 
     .form button {
-        height: 40px;
+        height: 45px;
         width: 100%;
-        color: #000;
+        color: #fff;
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 500;
         margin-top: 15px;
         border: none;
         border-radius: 6px;
@@ -74,14 +75,33 @@
     }
 
     .form button:hover {
-        background: #EE3E34;
+        background: #C04027;
+    }
+
+    .results {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .results h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .results p {
+        font-size: 1rem;
+        color: #555;
     }
 </style>
 
 <div class="container">
     <div class="form-wrapper">
-        <header>Prediksi Kelulusan</header>
-        <p>Masukkan data di bawah untuk memprediksi kelulusan berdasarkan input yang Anda berikan.</p>
+        <header>Prediksi Kelulusan Mahasiswa</header>
+        <p>Masukkan data Anda di bawah untuk memprediksi kelulusan berdasarkan informasi yang diberikan.</p>
 
         {{-- Formulir untuk memasukkan data prediksi --}}
         <form class="form" action="{{ route('dataset.predict.submit') }}" method="POST">
@@ -95,16 +115,6 @@
             </div>
 
             <div class="input-box">
-                <label for="total_ips">Total IPS (Jumlah IPS dari 4 semester)</label>
-                <input type="number" step="0.01" class="form-control" id="total_ips" name="total_ips" placeholder="Masukkan total IPS" required>
-            </div>
-
-            <div class="input-box">
-                <label for="total_sks">Total SKS (Jumlah SKS dari 4 semester)</label>
-                <input type="number" class="form-control" id="total_sks" name="total_sks" placeholder="Masukkan total SKS" required>
-            </div>
-
-            <div class="input-box">
                 <label for="status_pembayaran">Status Pembayaran</label>
                 <select class="form-control" id="status_pembayaran" name="status_pembayaran" required>
                     <option value="Tidak ada tunggakan">Tidak ada tunggakan</option>
@@ -115,12 +125,36 @@
                 </select>
             </div>
 
+            <div class="input-box">
+                <label for="average_ipk">Rata-rata IPK</label>
+                <input type="number" step="0.01" class="form-control" id="average_ipk" name="average_ipk" placeholder="Masukkan rata-rata IPK Anda (0.0 - 4.0)" required>
+            </div>
+
+            <div class="input-box">
+                <label for="total_matkul_lulus">Jumlah Mata Kuliah Lulus</label>
+                <input type="number" class="form-control" id="total_matkul_lulus" name="total_matkul_lulus" placeholder="Masukkan jumlah mata kuliah yang lulus" required>
+            </div>
+
+            <div class="input-box">
+                <label for="total_sks">Total SKS</label>
+                <input type="number" class="form-control" id="total_sks" name="total_sks" placeholder="Masukkan total SKS yang Anda tempuh" required>
+            </div>
+
             <button type="submit" class="btn">Prediksi Kelulusan</button>
         </form>
 
         {{-- Menampilkan hasil prediksi --}}
         @if (isset($predictedGraduation))
-            <h3 class="mt-4">Hasil Prediksi Kelulusan: <strong>{{ $predictedGraduation }}</strong></h3>
+            <div class="results">
+                <h3>Hasil Prediksi Kelulusan</h3>
+                <p><strong>Status:</strong> {{ $predictedGraduation }}</p>
+                <p><strong>Rata-rata IPK Anda:</strong> {{ $average_ipk_user }}</p>
+                <p><strong>Rata-rata IPK Mahasiswa:</strong> {{ $average_ipk_database }}</p>
+                <p><strong>Jumlah Mata Kuliah Lulus Anda:</strong> {{ $total_matkul_user }}</p>
+                <p><strong>Rata-rata Jumlah Mata Kuliah Mahasiswa:</strong> {{ $average_matkul_database }}</p>
+                <p><strong>Total SKS Anda:</strong> {{ $total_sks_user }}</p>
+                <p><strong>Rata-rata Total SKS Mahasiswa:</strong> {{ $average_sks_database }}</p>
+            </div>
         @endif
     </div>
 </div>

@@ -31,10 +31,10 @@ return new class extends Migration
             $table->integer('sks_semester_2')->nullable();
             $table->integer('sks_semester_3')->nullable();
             $table->integer('sks_semester_4')->nullable();
-            $table->text('matkul_semester_1')->nullable();
-            $table->text('matkul_semester_2')->nullable();
-            $table->text('matkul_semester_3')->nullable();
-            $table->text('matkul_semester_4')->nullable();
+            $table->integer('matkul_semester_1')->nullable();
+            $table->integer('matkul_semester_2')->nullable();
+            $table->integer('matkul_semester_3')->nullable();
+            $table->integer('matkul_semester_4')->nullable();
             $table->string('status_pembayaran');
             $table->string('kelulusan')->nullable();
             $table->timestamps();

@@ -134,15 +134,14 @@
         }
 
         th {
-            position: absolute; /* Agar header tidak ikut scroll */
-            top: 0; /* Menempatkan header di bagian atas tabel */
-            left: 0; /* Menempatkan header di kiri */
-            width: 100%; /* Membuat header selebar tabel */
-            background-color: #777676 !important;
-            color: #FFE6CD !important;
-            font-family: 'inter';
-            z-index: 2; /* Membuat th tetap di atas tabel */
-        }
+    position: sticky; /* Membuat header tetap berada di atas */
+    top: 0; /* Tetapkan posisi sticky di bagian atas */
+    background-color: #777676 !important; /* Warna latar header */
+    color: #FFE6CD !important; /* Warna teks header */
+    font-family: 'inter';
+    z-index: 2; /* Pastikan header berada di atas isi tabel */
+}
+
 
         /* Gaya untuk baris tabel genap */
         tr:nth-child(even) {
